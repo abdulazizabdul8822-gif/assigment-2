@@ -40,7 +40,7 @@ body {
 }
 
 .tech-text {
-    color: white;
+    color: rgba(255, 255, 255, 0.581);
 
 }
 
@@ -110,13 +110,12 @@ body {
 
 .big-image {
     max-width: 100%;
-    height: auto;
     display: block;
 }
 
 .small-image {
     position: absolute;
-    top: 9%;
+    top: 7%;
     left: 35%;
 
 }
@@ -164,7 +163,7 @@ body {
     text-align: center;
     font-weight: 400;
     font-size: 16px;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.581);
 
 }
 
@@ -205,6 +204,48 @@ body {
     background: transparent;
     border: 1px solid #00FF88;
 }
+
+.about-child{
+    text-align: center;
+    margin-top: 113px;
+}
+.about-child h3{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.about-child p{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.581);
+
+}
+
+
+.number{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 130px;
+}
+.number h2{
+    color: #00FF88;
+    font-weight: 900;
+    font-size: 48;
+    margin-bottom: 10px;
+}
+.number p{
+    color: rgba(255, 255, 255, 0.581);
+    font-weight: 400;
+    font-size: 16;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
 
 
 
@@ -261,10 +302,12 @@ body {
     width: 60px;
     height: 32px;
   }
+  .number{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   
 }
-
 
 
 
@@ -278,4 +321,15 @@ body {
     .navbar, .banner-content  {
         grid-template-columns: repeat(3, 1fr);
     }  
+
+
+.number{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 130px;
+}
+
+
+    
 }
