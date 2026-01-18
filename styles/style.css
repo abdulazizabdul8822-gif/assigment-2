@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(26, 11, 46, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    align-items: center;
+    
+
+}
+.nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.logo-box {
+    font-size: 40px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.tech-text{
+    color: white;
+   
+}
+
+.wave-text{
+    background: linear-gradient(
+        47.64deg,
+        rgba(247, 233, 63, 1),
+        rgba(251, 9, 180, 1),
+        rgba(145, 0, 248, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-self: end;  
+}
+
+.btn-primary {
+    width: 135px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    /* margin-left: 245px; */
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10000px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+}
+.nav-actions .fa-bars {
+    display: none;
+}
+
+
+/* media responsive */
+
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        grid-template-columns: 1fr auto;
+        padding-right: 16px;
+    }
+    .btn-primary, .nav-links{
+        display: none;
+    }
+
+    .nav-actions .fa-bars{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+/* large  */
+
+
+@media screen and (min-width: 992px) {
+    .nav-links {
+        display: grid;
+    }
+
+    .btn-primary {
+        display: flex;
+    }
+
+    .nav-actions .fa-bars {
+        display: none;
+    }
+
+    .navbar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
