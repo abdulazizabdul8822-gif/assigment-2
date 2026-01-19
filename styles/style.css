@@ -205,6 +205,14 @@ body {
     background: transparent;
     border: 1px solid #00FF88;
 }
+.child-btn-a:hover{
+    cursor: pointer;
+     background: #0c2419;
+}
+.child-btn-b:hover{
+    cursor: pointer;
+     background: rgb(171, 123, 231);
+}
 
 .about-child {
     text-align: center;
@@ -235,14 +243,14 @@ body {
 .number h2 {
     color: #00FF88;
     font-weight: 900;
-    font-size: 48;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 .number p {
     color: rgba(255, 255, 255, 0.581);
     font-weight: 400;
-    font-size: 16;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -451,16 +459,17 @@ body {
     height: 280px;
 }
 
-.host img{
+.host img {
     margin-left: 20px;
 }
 
-.detail h4{
+.detail h4 {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 20px;
 }
-.detail p{
+
+.detail p {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 15px;
@@ -471,8 +480,7 @@ body {
 .host-Company {
     display: flex;
     gap: 10px;
-    /* margin-top: 10px; */
-    
+
 }
 
 .host-company img {
@@ -487,18 +495,66 @@ body {
 
 }
 
-.host-company img:hover{
+.host-company img:hover {
     cursor: pointer;
     background-color: rgb(163, 119, 221);
 }
 
 
 
+.footer {
+    margin-top: 100px;
+    min-height: 400px;
+    background-image: url("../assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer-box{
+  text-align: center;
+}
+.footer-logo{
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
 
+.footer-logo span{
+   background: linear-gradient(47.64deg,
+            rgba(247, 233, 63, 1),
+            rgba(251, 9, 180, 1),
+            rgba(145, 0, 248, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.apple:hover img{ 
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.581);;
 
+}
 
-
+.apple{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.copyright{
+  font-size: 16px;
+  font-weight: 400;
+  color:rgba(255, 255, 255, 0.581);
+  margin: 20px auto;
+}
 
 
 /* media responsive */
@@ -580,23 +636,32 @@ body {
         gap: 50px;
     }
 
-    .parent-host{
+    .parent-host {
         grid-template-columns: 1fr;
         gap: 50px;
         height: auto;
     }
-     .host img {
+
+    .host img {
         display: block;
         margin: 0 auto;
         margin-top: 10px;
     }
+
     .host-company,
     .detail h4,
     .detail p {
         text-align: center;
     }
 
+   .footer-content{
+    grid-template-columns: repeat(2,auto);
+   }
+   .apple{
+    justify-content: center;
+   }
 }
+
 
 
 
@@ -606,11 +671,6 @@ body {
 
 
 @media screen and (min-width: 992px) {
-
-    .navbar,
-    .banner-content {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
     .number {
         display: grid;
@@ -637,9 +697,11 @@ body {
 
 
     .parent-host {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 24px;
-}
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 24px;
+    }
 
 }
+
+
