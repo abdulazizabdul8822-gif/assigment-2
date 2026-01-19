@@ -40,7 +40,7 @@ body {
 }
 
 .tech-text {
-    color: rgba(255, 255, 255, 0.581);
+    color: rgba(255, 255, 255, 1);
 
 }
 
@@ -129,9 +129,9 @@ body {
 
 .new {
     position: absolute;
-    top: 15%;
-    right: 0%;
-    left: 58%;
+    top: 8%;
+    /* right: 60%; */
+    left: 56%;
     font-weight: 600;
     font-size: 18px;
     color: black;
@@ -149,7 +149,7 @@ body {
 }
 
 .mini-image:hover {
-    transform: rotate(360deg) scale(1.5) translateX(100px);
+    transform: rotate(-360deg) scale(1.5) translateX(100px);
 }
 
 .tech h2 {
@@ -264,7 +264,7 @@ body {
 .container-parent-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(2, 215px);
     gap: 50px;
 }
 
@@ -279,11 +279,20 @@ body {
     justify-content: flex-start;
     gap: 14px;
     border-radius: 40px;
-    min-height: 300px;
-    max-width: 100%;
     background: rgb(47, 8, 95);
 
 
+}
+
+.one {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.tow {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.581);
 }
 
 .box-1 img {
@@ -302,8 +311,6 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 14px;
-    width: 790px;
-    height: 225px;
     max-width: 100%;
     background: rgb(47, 8, 95);
     border-radius: 40px;
@@ -311,8 +318,6 @@ body {
 
 .box-3 {
     grid-column: 2/ span 2;
-    width: 790px;
-    height: 225px;
     padding: 30px 32px;
     display: flex;
     flex-direction: column;
@@ -325,8 +330,6 @@ body {
 
 .box-4 {
     grid-column: 1/ span 2;
-    width: 790px;
-    height: 200px;
     padding: 30px 32px;
     display: flex;
     flex-direction: column;
@@ -337,15 +340,7 @@ body {
     background: rgb(47, 8, 95);
 }
 
-.box-4 img {
-    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
-    border-radius: 20px;
-
-}
-
 .box-5 {
-    width: 380px;
-    height: 200px;
     padding: 30px 32px;
     display: flex;
     flex-direction: column;
@@ -370,6 +365,85 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
+
+.parent-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.tow-image {
+    position: relative;
+
+}
+
+.tow-image>img:first-child {
+    width: 100%;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.play-button {
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    width: 48px;
+    height: auto;
+    cursor: pointer;
+}
+
+.parent-card h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 24px 0px 10px 0px;
+    margin-left: 10px;
+
+}
+
+.parent-card p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.581);
+    margin-left: 10px;
+
+}
+
+.child-card {
+    border: 1px solid rgb(47, 8, 95);
+    background: rgb(47, 8, 95);
+    border-radius: 16px;
+
+
+}
+
+.timer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+.Featured{
+    text-align: center;
+    margin-top: 200px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -435,19 +509,26 @@ body {
     .number {
         grid-template-columns: repeat(2, 1fr);
     }
-    .why h3{
+
+    .why h3 {
         white-space: nowrap;
     }
+
     .container-parent-box {
         grid-template-columns: 1fr;
         gap: 24px;
     }
 
-    .container-parent-box > div {
-    grid-column: auto;
-    width: 100%;
-    height: auto;
-  }
+    .container-parent-box>div {
+        grid-column: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .parent-card {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 
 }
 
@@ -464,8 +545,6 @@ body {
     .banner-content {
         grid-template-columns: repeat(3, 1fr);
     }
-
-
     .number {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -473,15 +552,20 @@ body {
         margin-top: 130px;
     }
 
-  .container-parent-box {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-  }
+    .container-parent-box {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
 
-  .container-parent-box > div {
-    width: 100%;
-    height: auto;
-  }
+    .container-parent-box>div {
+        width: 100%;
+        height: auto;
+    }
+
+    .parent-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
 
 }
-

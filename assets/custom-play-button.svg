@@ -1,0 +1,15 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="playGradient" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F7E93F"/>
+      <stop offset="50%" stop-color="#FB09B4"/>
+      <stop offset="100%" stop-color="#9100F8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circle background -->
+  <circle cx="40" cy="40" r="38" fill="url(#playGradient)"/>
+
+  <!-- Play icon -->
+  <path d="M32 26V54L54 40L32 26Z" fill="white"/>
+</svg>
